@@ -3,193 +3,131 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>David Motor - Bengkel Kendaraan</title>
+  <title>David Motor</title>
+  <link rel="icon" type="image/png" href="favicon.png">
   <style>
     body {
-      margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
       color: #333;
     }
-
-    /* Header */
     header {
-      background: linear-gradient(90deg, #b30000, #ff4d4d);
+      background: #b30000;
       color: white;
-      padding: 20px 0;
+      padding: 15px;
       text-align: center;
     }
-    header h1 {
-      margin: 0;
-      font-size: 28px;
-    }
-    header p {
-      margin: 5px 0 0;
-      font-size: 16px;
-    }
-
-    /* Navbar */
     nav {
-      background: #222;
-      display: flex;
-      justify-content: center;
-      padding: 10px 0;
+      background: #333;
+      padding: 10px;
+      text-align: center;
     }
     nav a {
       color: white;
-      text-decoration: none;
       margin: 0 15px;
+      text-decoration: none;
       font-weight: bold;
     }
     nav a:hover {
-      color: #ff4d4d;
+      color: #ffcc00;
     }
-
-    /* Hero */
     .hero {
       text-align: center;
       padding: 50px 20px;
-      background: url('https://i.ibb.co/zXHwfdX/mechanic.jpg') center/cover no-repeat;
+      background: url('quality_restoration_20240927101550542.jpg') center/cover no-repeat;
       color: white;
+      height: 400px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-shadow: 2px 2px 5px black;
     }
-    .hero h2 {
-      font-size: 32px;
-      margin-bottom: 15px;
-      text-shadow: 2px 2px 4px #000;
+    .hero h1 {
+      font-size: 3em;
+      margin: 0;
     }
-    .hero button {
-      padding: 12px 25px;
-      font-size: 16px;
-      background: #25D366;
-      border: none;
-      border-radius: 5px;
-      color: white;
-      cursor: pointer;
+    .hero p {
+      font-size: 1.2em;
     }
-    .hero button:hover {
-      background: #1ebe5b;
-    }
-
-    /* Section */
     section {
       padding: 40px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-    section h3 {
       text-align: center;
-      margin-bottom: 20px;
-      color: #b30000;
     }
-
-    /* Cards */
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
       gap: 20px;
     }
     .card {
       background: white;
       padding: 20px;
       border-radius: 10px;
-      text-align: center;
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      width: 250px;
+      transition: transform 0.3s;
     }
-    .card h4 {
-      margin: 10px 0;
-      color: #333;
+    .card:hover {
+      transform: translateY(-5px);
     }
-
-    /* Kontak */
-    .contact {
-      text-align: center;
-      background: #fff3f3;
-      padding: 30px;
-      border-radius: 10px;
-    }
-    .contact p {
-      margin: 8px 0;
-    }
-    .contact a {
-      display: inline-block;
-      margin-top: 10px;
-      padding: 12px 20px;
-      background: #25D366;
-      color: white;
-      border-radius: 5px;
-      text-decoration: none;
-    }
-    .contact a:hover {
-      background: #1ebe5b;
-    }
-
-    /* Footer */
     footer {
-      text-align: center;
-      padding: 15px;
-      background: #222;
+      background: #333;
       color: white;
-      font-size: 14px;
+      padding: 20px;
+      text-align: center;
+    }
+    footer a {
+      color: #ffcc00;
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
-
-  <!-- Header -->
   <header>
-    <h1>🚗 David Motor</h1>
-    <p>Bengkel Mobil & Servis Kendaraan</p>
+    <h1>David Motor</h1>
+    <p>Bengkel & Jual Beli Kendaraan</p>
   </header>
-
-  <!-- Navbar -->
   <nav>
     <a href="#layanan">Layanan</a>
     <a href="#kontak">Kontak</a>
   </nav>
 
-  <!-- Hero -->
   <div class="hero">
-    <h2>Perawatan & Servis Kendaraan Terpercaya</h2>
-    <a href="https://wa.me/6285803555819" target="_blank">
-      <button>Chat via WhatsApp</button>
-    </a>
+    <h1>Selamat Datang di David Motor</h1>
+    <p>Solusi terbaik untuk kendaraan Anda 🚗🔧</p>
   </div>
 
-  <!-- Layanan -->
   <section id="layanan">
-    <h3>Layanan Kami</h3>
-    <div class="cards">
+    <h2>Layanan Kami</h2>
+    <div class="services">
       <div class="card">
-        <h4>🔧 Servis Mesin</h4>
-        <p>Perawatan & perbaikan mesin mobil agar tetap prima.</p>
+        <h3>Service & Perbaikan</h3>
+        <p>Perawatan rutin, tune up, dan perbaikan kendaraan.</p>
       </div>
       <div class="card">
-        <h4>🛢️ Ganti Oli</h4>
-        <p>Penggantian oli berkualitas untuk performa maksimal.</p>
+        <h3>Jual Beli Kendaraan</h3>
+        <p>Menyediakan kendaraan bekas berkualitas dengan harga bersaing.</p>
       </div>
       <div class="card">
-        <h4>🛑 Perbaikan Rem</h4>
-        <p>Pengecekan & perbaikan rem demi keselamatan.</p>
-      </div>
-      <div class="card">
-        <h4>❄️ Servis AC Mobil</h4>
-        <p>AC mobil sejuk kembali dengan servis rutin.</p>
+        <h3>Sparepart & Aksesoris</h3>
+        <p>Berbagai sparepart dan aksesoris kendaraan tersedia di sini.</p>
       </div>
     </div>
   </section>
 
-  <!-- Kontak -->
-  <section id="kontak" class="contact">
-    <h3>Kontak Kami</h3>
-    <p>📍 Alamat: Tembelang, Tambahrejo RT01 RW02</p>
-    <p>📞 Telepon: 085803555819</p>
-    <a href="https://wa.me/6285803555819" target="_blank">Chat via WhatsApp</a>
+  <section id="kontak">
+    <h2>Hubungi Kami</h2>
+    <p>📍 Tambahrejo Pageruyung, Kendal, Jawa Tengah</p>
+    <p>📞 0858-0355-5819</p>
+    <p>📧 davidardianto2604@gmail.com</p>
+    <p><a href="https://wa.me/6285803555819" target="_blank">Chat via WhatsApp</a></p>
   </section>
 
-  <!-- Footer -->
   <footer>
-    © 2025 David Motor | All Rights Reserved
+    <p>&copy; 2025 David Motor. Semua Hak Dilindungi.</p>
   </footer>
-
 </body>
 </html>
