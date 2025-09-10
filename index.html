@@ -1,84 +1,195 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
   <meta charset="UTF-8">
-  <title>David Motor</title>
-
-  <!-- Bagian CSS -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>David Motor - Bengkel Kendaraan</title>
   <style>
     body {
-      background-color: #f5f5f5;
-      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
     }
+
+    /* Header */
     header {
-      background: #c62828;
+      background: linear-gradient(90deg, #b30000, #ff4d4d);
       color: white;
-      padding: 20px;
+      padding: 20px 0;
       text-align: center;
     }
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+    header p {
+      margin: 5px 0 0;
+      font-size: 16px;
+    }
+
+    /* Navbar */
     nav {
-      background: #333;
-      padding: 10px;
-      text-align: center;
+      background: #222;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
     }
     nav a {
       color: white;
-      margin: 0 10px;
       text-decoration: none;
+      margin: 0 15px;
       font-weight: bold;
     }
     nav a:hover {
-      color: yellow;
+      color: #ff4d4d;
     }
-    .btn {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 10px 20px;
-      background: #2e7d32;
+
+    /* Hero */
+    .hero {
+      text-align: center;
+      padding: 50px 20px;
+      background: url('https://i.ibb.co/zXHwfdX/mechanic.jpg') center/cover no-repeat;
       color: white;
-      text-decoration: none;
-      border-radius: 8px;
     }
-    .btn:hover {
-      background: #1b5e20;
+    .hero h2 {
+      font-size: 32px;
+      margin-bottom: 15px;
+      text-shadow: 2px 2px 4px #000;
+    }
+    .hero button {
+      padding: 12px 25px;
+      font-size: 16px;
+      background: #25D366;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      cursor: pointer;
+    }
+    .hero button:hover {
+      background: #1ebe5b;
+    }
+
+    /* Section */
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    section h3 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #b30000;
+    }
+
+    /* Cards */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .card h4 {
+      margin: 10px 0;
+      color: #333;
+    }
+
+    /* Kontak */
+    .contact {
+      text-align: center;
+      background: #fff3f3;
+      padding: 30px;
+      border-radius: 10px;
+    }
+    .contact p {
+      margin: 8px 0;
+    }
+    .contact a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 12px 20px;
+      background: #25D366;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+    .contact a:hover {
+      background: #1ebe5b;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #222;
+      color: white;
+      font-size: 14px;
     }
   </style>
 </head>
-
 <body>
+
+  <!-- Header -->
   <header>
-    <h1>David Motor</h1>
+    <h1>🚗 David Motor</h1>
     <p>Bengkel Mobil & Servis Kendaraan</p>
   </header>
 
+  <!-- Navbar -->
   <nav>
-    <a href="#home">Home</a>
     <a href="#layanan">Layanan</a>
     <a href="#kontak">Kontak</a>
   </nav>
 
-  <section id="home" style="padding:20px;">
-    <h2>Selamat Datang di David Motor</h2>
-    <p>Kami melayani servis mobil, ganti oli, tune up, dan perbaikan umum.</p>
+  <!-- Hero -->
+  <div class="hero">
+    <h2>Perawatan & Servis Kendaraan Terpercaya</h2>
+    <a href="https://wa.me/6285803555819" target="_blank">
+      <button>Chat via WhatsApp</button>
+    </a>
+  </div>
+
+  <!-- Layanan -->
+  <section id="layanan">
+    <h3>Layanan Kami</h3>
+    <div class="cards">
+      <div class="card">
+        <h4>🔧 Servis Mesin</h4>
+        <p>Perawatan & perbaikan mesin mobil agar tetap prima.</p>
+      </div>
+      <div class="card">
+        <h4>🛢️ Ganti Oli</h4>
+        <p>Penggantian oli berkualitas untuk performa maksimal.</p>
+      </div>
+      <div class="card">
+        <h4>🛑 Perbaikan Rem</h4>
+        <p>Pengecekan & perbaikan rem demi keselamatan.</p>
+      </div>
+      <div class="card">
+        <h4>❄️ Servis AC Mobil</h4>
+        <p>AC mobil sejuk kembali dengan servis rutin.</p>
+      </div>
+    </div>
   </section>
 
-  <section id="layanan" style="padding:20px;">
-    <h2>Layanan Kami</h2>
-    <ul>
-      <li>Servis mesin</li>
-      <li>Ganti oli</li>
-      <li>Perbaikan rem</li>
-      <li>AC mobil</li>
-    </ul>
+  <!-- Kontak -->
+  <section id="kontak" class="contact">
+    <h3>Kontak Kami</h3>
+    <p>📍 Alamat: Tembelang, Tambahrejo RT01 RW02</p>
+    <p>📞 Telepon: 085803555819</p>
+    <a href="https://wa.me/6285803555819" target="_blank">Chat via WhatsApp</a>
   </section>
 
-  <section id="kontak" style="padding:20px;">
-    <h2>Kontak</h2>
-    <p>Alamat: Tembelang, Tambahrejo RT01 RW02</p>
-    <p>Telepon: 085803555819</p>
-    <a class="btn" href="https://wa.me/6285803555819" target="_blank">Chat via WhatsApp</a>
-  </section>
+  <!-- Footer -->
+  <footer>
+    © 2025 David Motor | All Rights Reserved
+  </footer>
+
 </body>
 </html>
